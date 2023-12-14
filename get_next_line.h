@@ -8,7 +8,8 @@
 // STDIO - RETIRAR BIBLIOTECA DEPOIS
 #include <stdio.h>
 
-char	*get_next_line(int fd);
-
+char	*read_buffsize(int fd);
+char	*check_line(int fd);
+char	*ft_substr(char *s, unsigned int start, size_t len);
 
 #endif
