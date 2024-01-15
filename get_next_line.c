@@ -80,7 +80,7 @@ char	*ft_gnl_strdup(char *s, int size_buff)
 	return (ptr);
 }
 
-char *ft_gnl_strjoin(char *s1, char *s2)
+char	*ft_gnl_strjoin(char *s1, char *s2)
 {
 	char *ptr;
 	int	s1_len;
@@ -147,12 +147,28 @@ char	*store_after_lb(char *buffer)
 	return (ptr);
 }
 
+char	*buffering_process (char *buffer, char *storage, char *ent_line, int buff_size)
+{
+	if (!ent_line)
+		ent_line = ft_gnl_strdup(buffer, buff_size);
+	else
+	{
+		storage = ft_gnl_strdup(ent_line, ft_gnl_strlen(ent_line));
+		free(ent_line);
+		ent_line = ft_gnl_strjoin(storage, buffer);
+		free(storage);
+		storage = NULL;
+	}
+	printf("Buffer_size is : %d and buffer is: %s\n",buff_size, buffer);
+	free(buffer);
+	return (ent_line);
+}
 char	*buffer_until_line(int fd)
 {
-	int		buff_size;
+	int			buff_size;
 	static char	*storage;
-	char	*buffer;
-	char	*ent_line;
+	char		*ent_line;
+	char		*buffer;
 
 	ent_line = NULL;
 	buff_size = BUFFER_SIZE;
@@ -164,24 +180,13 @@ char	*buffer_until_line(int fd)
 	}
 	while (buff_size == BUFFER_SIZE)
 	{
-
 		buffer = (char *)malloc((BUFFER_SIZE + 1) * sizeof(char));
 		if (!buffer)
-			return (NULL);
+			return (0);
 		buff_size = read(fd, buffer, BUFFER_SIZE);
 		buffer[buff_size] = '\0';
-		if (!ent_line)
-			ent_line = ft_gnl_strdup(buffer, buff_size);
-		else
-		{
-			storage = ft_gnl_strdup(ent_line, ft_gnl_strlen(ent_line));
-			free(ent_line);
-			ent_line = ft_gnl_strjoin(storage, buffer);
-			free(storage);
-			storage = NULL;
-		}
-		printf("Buffer_size is : %d and buffer is: %s\n",buff_size, buffer);
-		free(buffer);
+		ent_line = buffering_process(buffer, storage, ent_line, buff_size);
+		printf("ent line is : %s\n",ent_line);
 		if(ent_line != NULL && ft_gnl_strchr(ent_line, '\n') != 0)
 		{
 			printf("INSIDE WHILE - function strchr catch a line break\n, the buffer in question is: %s\n", ent_line);
