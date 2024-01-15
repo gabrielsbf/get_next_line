@@ -29,45 +29,6 @@ int	ft_gnl_strlen(char *s)
 	return (i);
 }
 
-char	*ft_gnl_substr(char *s, unsigned int start, size_t len)
-{
-	size_t			s_size;
-	size_t			i_ptr;
-	char			*ptr;
-
-	if (!s)
-		return (NULL);
-	i_ptr = 0;
-	s_size = 0;
-	while (*(s + s_size) != '\0')
-		s_size++;
-	if (s_size <= start)
-		len = 0;
-	ptr = (char *)malloc((len + 1) * sizeof(char));
-	if (!ptr)
-		return (NULL);
-	while (i_ptr < len && s_size > start)
-	{
-		ptr[i_ptr] = s[start];
-		start++;
-		i_ptr++;
-	}
-	ptr[i_ptr] = '\0';
-	return (ptr);
-}
-
-char	*check_line(char *buffer, size_t bytes_read)
-{
-	size_t	i;
-	char	*t_line;
-
-	i = 0;
-	while (*(buffer + i) != '\n' && i < bytes_read)
-		i++;
-	t_line = ft_gnl_substr(buffer, 0, i);
-	return (t_line);
-}
-
 size_t ft_gnl_strcpy(char *src, char *dst)
 {
 	int	i;
@@ -157,6 +118,7 @@ char	*return_line(char *ent_line)
 		i++;
 
 	}
+	free(ent_line);
 	ptr[i] = '\n';
 	ptr[i + 1] = '\0';
 	return (ptr);
@@ -202,14 +164,12 @@ char	*buffer_until_line(int fd)
 	}
 	while (buff_size == BUFFER_SIZE)
 	{
+
 		buffer = (char *)malloc((BUFFER_SIZE + 1) * sizeof(char));
 		if (!buffer)
 			return (NULL);
 		buff_size = read(fd, buffer, BUFFER_SIZE);
 		buffer[buff_size] = '\0';
-		// NESSA SENTENÇA - ENTENDER COMO FAZER CONDIÇÃO
-		// PARA QUANDO BUFFER PEGAR MAIS DE UM /n - TALVEZ O STORAGE NA FUNÇÃO
-		// "store_after_lb" NÃO POSSA SER O BUFFER, E SIM OUTRA COISA (TALVEZ ENTIRE LINE)
 		if (!ent_line)
 			ent_line = ft_gnl_strdup(buffer, buff_size);
 		else
@@ -221,14 +181,14 @@ char	*buffer_until_line(int fd)
 			storage = NULL;
 		}
 		printf("Buffer_size is : %d and buffer is: %s\n",buff_size, buffer);
-		if(ft_gnl_strchr(ent_line, '\n') != 0)
+		free(buffer);
+		if(ent_line != NULL && ft_gnl_strchr(ent_line, '\n') != 0)
 		{
-			printf("function strchr catch a line break\n, the buffer in question is: %s\n", buffer);
+			printf("INSIDE WHILE - function strchr catch a line break\n, the buffer in question is: %s\n", ent_line);
+			storage = store_after_lb(ent_line);
 			ent_line = return_line(ent_line);
-			storage = store_after_lb(buffer);
 			break ;
 		}
-		free(buffer);
 	}
 	printf("storage  at the final of function is: %s\n", storage);
 	return (ent_line);

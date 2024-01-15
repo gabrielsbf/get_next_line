@@ -1,0 +1,100 @@
+Buffer_size is : 824 and buffer is: Lorem ipsum dolor sit amet.E
+
+Et dicta provident ut itaque nemo sit consectetur atque qui nulla dignissimos et vitae cumque hic fuga cumque. Qui explicabo incidunt sit quasi incidunt et odio velit et omnis reiciendis.
+Ex delectus quia et necessitatibus molestias et voluptas quos est officia nisi et voluptatem delectus. Et sapiente iste est quisquam corporis ut nobis magni eos eveniet ratione. Ut voluptas numquam est animi sapiente ab atque dolorem hic Quis vero et error voluptas. Et voluptatem aliquam sed deleniti velit 33 reprehenderit incidunt.
+Ea voluptatum quia nam earum sint sed tenetur voluptas cum cupiditate voluptatibus aut corrupti molestiae ab iste quisquam et deserunt iusto. Sed voluptas minus vel sunt amet sed quis consectetur hic nihil veniam ut eaque iusto qui deserunt molestiae et cumque sequi?
+INSIDE WHILE - function strchr catch a line break
+, the buffer in question is: Lorem ipsum dolor sit amet.E
+
+Et dicta provident ut itaque nemo sit consectetur atque qui nulla dignissimos et vitae cumque hic fuga cumque. Qui explicabo incidunt sit quasi incidunt et odio velit et omnis reiciendis.
+Ex delectus quia et necessitatibus molestias et voluptas quos est officia nisi et voluptatem delectus. Et sapiente iste est quisquam corporis ut nobis magni eos eveniet ratione. Ut voluptas numquam est animi sapiente ab atque dolorem hic Quis vero et error voluptas. Et voluptatem aliquam sed deleniti velit 33 reprehenderit incidunt.
+Ea voluptatum quia nam earum sint sed tenetur voluptas cum cupiditate voluptatibus aut corrupti molestiae ab iste quisquam et deserunt iusto. Sed voluptas minus vel sunt amet sed quis consectetur hic nihil veniam ut eaque iusto qui deserunt molestiae et cumque sequi?
+i_iteration is: 795
+ptr value is: 
+Et dicta provident ut itaque nemo sit consectetur atque qui nulla dignissimos et vitae cumque hic fuga cumque. Qui explicabo incidunt sit quasi incidunt et odio velit et omnis reiciendis.
+Ex delectus quia et necessitatibus molestias et voluptas quos est officia nisi et voluptatem delectus. Et sapiente iste est quisquam corporis ut nobis magni eos eveniet ratione. Ut voluptas numquam est animi sapiente ab atque dolorem hic Quis vero et error voluptas. Et voluptatem aliquam sed deleniti velit 33 reprehenderit incidunt.
+Ea voluptatum quia nam earum sint sed tenetur voluptas cum cupiditate voluptatibus aut corrupti molestiae ab iste quisquam et deserunt iusto. Sed voluptas minus vel sunt amet sed quis consectetur hic nihil veniam ut eaque iusto qui deserunt molestiae et cumque sequi?
+storage  at the final of function is: 
+Et dicta provident ut itaque nemo sit consectetur atque qui nulla dignissimos et vitae cumque hic fuga cumque. Qui explicabo incidunt sit quasi incidunt et odio velit et omnis reiciendis.
+Ex delectus quia et necessitatibus molestias et voluptas quos est officia nisi et voluptatem delectus. Et sapiente iste est quisquam corporis ut nobis magni eos eveniet ratione. Ut voluptas numquam est animi sapiente ab atque dolorem hic Quis vero et error voluptas. Et voluptatem aliquam sed deleniti velit 33 reprehenderit incidunt.
+Ea voluptatum quia nam earum sint sed tenetur voluptas cum cupiditate voluptatibus aut corrupti molestiae ab iste quisquam et deserunt iusto. Sed voluptas minus vel sunt amet sed quis consectetur hic nihil veniam ut eaque iusto qui deserunt molestiae et cumque sequi?
+*************RUN 0 of function*************
+ TEXT: Lorem ipsum dolor sit amet.E
+********************************************
+
+storage is 
+Et dicta provident ut itaque nemo sit consectetur atque qui nulla dignissimos et vitae cumque hic fuga cumque. Qui explicabo incidunt sit quasi incidunt et odio velit et omnis reiciendis.
+Ex delectus quia et necessitatibus molestias et voluptas quos est officia nisi et voluptatem delectus. Et sapiente iste est quisquam corporis ut nobis magni eos eveniet ratione. Ut voluptas numquam est animi sapiente ab atque dolorem hic Quis vero et error voluptas. Et voluptatem aliquam sed deleniti velit 33 reprehenderit incidunt.
+Ea voluptatum quia nam earum sint sed tenetur voluptas cum cupiditate voluptatibus aut corrupti molestiae ab iste quisquam et deserunt iusto. Sed voluptas minus vel sunt amet sed quis consectetur hic nihil veniam ut eaque iusto qui deserunt molestiae et cumque sequi?
+Buffer_size is : 2 and buffer is: 
+
+INSIDE WHILE - function strchr catch a line break
+, the buffer in question is: 
+Et dicta provident ut itaque nemo sit consectetur atque qui nulla dignissimos et vitae cumque hic fuga cumque. Qui explicabo incidunt sit quasi incidunt et odio velit et omnis reiciendis.
+Ex delectus quia et necessitatibus molestias et voluptas quos est officia nisi et voluptatem delectus. Et sapiente iste est quisquam corporis ut nobis magni eos eveniet ratione. Ut voluptas numquam est animi sapiente ab atque dolorem hic Quis vero et error voluptas. Et voluptatem aliquam sed deleniti velit 33 reprehenderit incidunt.
+Ea voluptatum quia nam earum sint sed tenetur voluptas cum cupiditate voluptatibus aut corrupti molestiae ab iste quisquam et deserunt iusto. Sed voluptas minus vel sunt amet sed quis consectetur hic nihil veniam ut eaque iusto qui deserunt molestiae et cumque sequi?
+
+i_iteration is: 795
+ptr value is: Et dicta provident ut itaque nemo sit consectetur atque qui nulla dignissimos et vitae cumque hic fuga cumque. Qui explicabo incidunt sit quasi incidunt et odio velit et omnis reiciendis.
+Ex delectus quia et necessitatibus molestias et voluptas quos est officia nisi et voluptatem delectus. Et sapiente iste est quisquam corporis ut nobis magni eos eveniet ratione. Ut voluptas numquam est animi sapiente ab atque dolorem hic Quis vero et error voluptas. Et voluptatem aliquam sed deleniti velit 33 reprehenderit incidunt.
+Ea voluptatum quia nam earum sint sed tenetur voluptas cum cupiditate voluptatibus aut corrupti molestiae ab iste quisquam et deserunt iusto. Sed voluptas minus vel sunt amet sed quis consectetur hic nihil veniam ut eaque iusto qui deserunt molestiae et cumque sequi?
+
+storage  at the final of function is: Et dicta provident ut itaque nemo sit consectetur atque qui nulla dignissimos et vitae cumque hic fuga cumque. Qui explicabo incidunt sit quasi incidunt et odio velit et omnis reiciendis.
+Ex delectus quia et necessitatibus molestias et voluptas quos est officia nisi et voluptatem delectus. Et sapiente iste est quisquam corporis ut nobis magni eos eveniet ratione. Ut voluptas numquam est animi sapiente ab atque dolorem hic Quis vero et error voluptas. Et voluptatem aliquam sed deleniti velit 33 reprehenderit incidunt.
+Ea voluptatum quia nam earum sint sed tenetur voluptas cum cupiditate voluptatibus aut corrupti molestiae ab iste quisquam et deserunt iusto. Sed voluptas minus vel sunt amet sed quis consectetur hic nihil veniam ut eaque iusto qui deserunt molestiae et cumque sequi?
+
+*************RUN 1 of function*************
+ TEXT: 
+********************************************
+
+storage is Et dicta provident ut itaque nemo sit consectetur atque qui nulla dignissimos et vitae cumque hic fuga cumque. Qui explicabo incidunt sit quasi incidunt et odio velit et omnis reiciendis.
+Ex delectus quia et necessitatibus molestias et voluptas quos est officia nisi et voluptatem delectus. Et sapiente iste est quisquam corporis ut nobis magni eos eveniet ratione. Ut voluptas numquam est animi sapiente ab atque dolorem hic Quis vero et error voluptas. Et voluptatem aliquam sed deleniti velit 33 reprehenderit incidunt.
+Ea voluptatum quia nam earum sint sed tenetur voluptas cum cupiditate voluptatibus aut corrupti molestiae ab iste quisquam et deserunt iusto. Sed voluptas minus vel sunt amet sed quis consectetur hic nihil veniam ut eaque iusto qui deserunt molestiae et cumque sequi?
+
+Buffer_size is : 0 and buffer is: 
+INSIDE WHILE - function strchr catch a line break
+, the buffer in question is: Et dicta provident ut itaque nemo sit consectetur atque qui nulla dignissimos et vitae cumque hic fuga cumque. Qui explicabo incidunt sit quasi incidunt et odio velit et omnis reiciendis.
+Ex delectus quia et necessitatibus molestias et voluptas quos est officia nisi et voluptatem delectus. Et sapiente iste est quisquam corporis ut nobis magni eos eveniet ratione. Ut voluptas numquam est animi sapiente ab atque dolorem hic Quis vero et error voluptas. Et voluptatem aliquam sed deleniti velit 33 reprehenderit incidunt.
+Ea voluptatum quia nam earum sint sed tenetur voluptas cum cupiditate voluptatibus aut corrupti molestiae ab iste quisquam et deserunt iusto. Sed voluptas minus vel sunt amet sed quis consectetur hic nihil veniam ut eaque iusto qui deserunt molestiae et cumque sequi?
+
+i_iteration is: 606
+ptr value is: Ex delectus quia et necessitatibus molestias et voluptas quos est officia nisi et voluptatem delectus. Et sapiente iste est quisquam corporis ut nobis magni eos eveniet ratione. Ut voluptas numquam est animi sapiente ab atque dolorem hic Quis vero et error voluptas. Et voluptatem aliquam sed deleniti velit 33 reprehenderit incidunt.
+Ea voluptatum quia nam earum sint sed tenetur voluptas cum cupiditate voluptatibus aut corrupti molestiae ab iste quisquam et deserunt iusto. Sed voluptas minus vel sunt amet sed quis consectetur hic nihil veniam ut eaque iusto qui deserunt molestiae et cumque sequi?
+
+storage  at the final of function is: Ex delectus quia et necessitatibus molestias et voluptas quos est officia nisi et voluptatem delectus. Et sapiente iste est quisquam corporis ut nobis magni eos eveniet ratione. Ut voluptas numquam est animi sapiente ab atque dolorem hic Quis vero et error voluptas. Et voluptatem aliquam sed deleniti velit 33 reprehenderit incidunt.
+Ea voluptatum quia nam earum sint sed tenetur voluptas cum cupiditate voluptatibus aut corrupti molestiae ab iste quisquam et deserunt iusto. Sed voluptas minus vel sunt amet sed quis consectetur hic nihil veniam ut eaque iusto qui deserunt molestiae et cumque sequi?
+
+*************RUN 2 of function*************
+ TEXT: Et dicta provident ut itaque nemo sit consectetur atque qui nulla dignissimos et vitae cumque hic fuga cumque. Qui explicabo incidunt sit quasi incidunt et odio velit et omnis reiciendis.
+********************************************
+
+storage is Ex delectus quia et necessitatibus molestias et voluptas quos est officia nisi et voluptatem delectus. Et sapiente iste est quisquam corporis ut nobis magni eos eveniet ratione. Ut voluptas numquam est animi sapiente ab atque dolorem hic Quis vero et error voluptas. Et voluptatem aliquam sed deleniti velit 33 reprehenderit incidunt.
+Ea voluptatum quia nam earum sint sed tenetur voluptas cum cupiditate voluptatibus aut corrupti molestiae ab iste quisquam et deserunt iusto. Sed voluptas minus vel sunt amet sed quis consectetur hic nihil veniam ut eaque iusto qui deserunt molestiae et cumque sequi?
+
+Buffer_size is : 0 and buffer is: 
+INSIDE WHILE - function strchr catch a line break
+, the buffer in question is: Ex delectus quia et necessitatibus molestias et voluptas quos est officia nisi et voluptatem delectus. Et sapiente iste est quisquam corporis ut nobis magni eos eveniet ratione. Ut voluptas numquam est animi sapiente ab atque dolorem hic Quis vero et error voluptas. Et voluptatem aliquam sed deleniti velit 33 reprehenderit incidunt.
+Ea voluptatum quia nam earum sint sed tenetur voluptas cum cupiditate voluptatibus aut corrupti molestiae ab iste quisquam et deserunt iusto. Sed voluptas minus vel sunt amet sed quis consectetur hic nihil veniam ut eaque iusto qui deserunt molestiae et cumque sequi?
+
+i_iteration is: 270
+ptr value is: Ea voluptatum quia nam earum sint sed tenetur voluptas cum cupiditate voluptatibus aut corrupti molestiae ab iste quisquam et deserunt iusto. Sed voluptas minus vel sunt amet sed quis consectetur hic nihil veniam ut eaque iusto qui deserunt molestiae et cumque sequi?
+
+storage  at the final of function is: Ea voluptatum quia nam earum sint sed tenetur voluptas cum cupiditate voluptatibus aut corrupti molestiae ab iste quisquam et deserunt iusto. Sed voluptas minus vel sunt amet sed quis consectetur hic nihil veniam ut eaque iusto qui deserunt molestiae et cumque sequi?
+
+*************RUN 3 of function*************
+ TEXT: Ex delectus quia et necessitatibus molestias et voluptas quos est officia nisi et voluptatem delectus. Et sapiente iste est quisquam corporis ut nobis magni eos eveniet ratione. Ut voluptas numquam est animi sapiente ab atque dolorem hic Quis vero et error voluptas. Et voluptatem aliquam sed deleniti velit 33 reprehenderit incidunt.
+********************************************
+
+storage is Ea voluptatum quia nam earum sint sed tenetur voluptas cum cupiditate voluptatibus aut corrupti molestiae ab iste quisquam et deserunt iusto. Sed voluptas minus vel sunt amet sed quis consectetur hic nihil veniam ut eaque iusto qui deserunt molestiae et cumque sequi?
+
+Buffer_size is : 0 and buffer is: 
+INSIDE WHILE - function strchr catch a line break
+, the buffer in question is: Ea voluptatum quia nam earum sint sed tenetur voluptas cum cupiditate voluptatibus aut corrupti molestiae ab iste quisquam et deserunt iusto. Sed voluptas minus vel sunt amet sed quis consectetur hic nihil veniam ut eaque iusto qui deserunt molestiae et cumque sequi?
+
+i_iteration is: 1
+ptr value is: 
+storage  at the final of function is: 
+*************RUN 4 of function*************
+ TEXT: Ea voluptatum quia nam earum sint sed tenetur voluptas cum cupiditate voluptatibus aut corrupti molestiae ab iste quisquam et deserunt iusto. Sed voluptas minus vel sunt amet sed quis consectetur hic nihil veniam ut eaque iusto qui deserunt molestiae et cumque sequi?
+********************************************
+
