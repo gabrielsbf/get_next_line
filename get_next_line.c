@@ -163,6 +163,7 @@ char	*buffering_process (char *buffer, char *storage, char *ent_line, int buff_s
 	free(buffer);
 	return (ent_line);
 }
+
 char	*buffer_until_line(int fd)
 {
 	int			buff_size;
