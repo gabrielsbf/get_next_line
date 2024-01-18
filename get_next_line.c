@@ -1,85 +1,6 @@
 
 #include "get_next_line.h"
 
-char	*ft_gnl_strchr(char *s, int c)
-{
-	char	*strc;
-	int		i;
-
-	strc = (char *)s;
-	i = 0;
-	while (s[i] != '\0')
-	{
-		if (s[i] == c)
-			return ((char *)&strc[i]);
-		i++;
-	}
-	if (s[i] == c)
-		return ((char *)&strc[i]);
-	return (0);
-}
-
-int	ft_gnl_strlen(char *s)
-{
-	int	i;
-
-	i = 0;
-	while (s[i] != '\0')
-		i++;
-	return (i);
-}
-
-size_t ft_gnl_strcpy(char *src, char *dst)
-{
-	int	i;
-
-	i = 0;
-	if (src == NULL || dst == NULL)
-		return (0);
-	while (src[i] != '\0')
-	{
-		dst[i] = src[i];
-		i++;
-	}
-	dst[i] = '\0';
-	return (i);
-}
-
-size_t ft_gnl_strcat(char *src, char *dst)
-{
-	int	i_dst;
-	int	i_src;
-
-	i_src = 0;
-	i_dst = 0;
-	if (src == NULL || dst == NULL)
-		return (0);
-	while (dst[i_dst] != '\0')
-		i_dst++;
-	while (src[i_src] != '\0')
-		dst[i_dst++] = src[i_src++];
-	dst[i_dst] = '\0';
-	return (i_dst);
-}
-
-char	*ft_gnl_strdup(char *s, int size_buff)
-{
-	int		i;
-	char	*ptr;
-
-	i = 0;
-	if (s == NULL)
-		return (NULL);
-	ptr = (char *)malloc((size_buff + 1) * sizeof(char));
-	while (i < size_buff)
-	{
-		ptr[i] = s[i];
-		i++;
-	}
-	ptr[i] = '\0';
-	return (ptr);
-}
-
 char	*ft_gnl_strjoin(char *s1, char *s2)
 {
 	char *ptr;
@@ -198,25 +119,4 @@ char	*buffer_until_line(int fd)
 	}
 	printf("storage  at the final of function is: %s\n", storage);
 	return (ent_line);
-}
-
-#include <sys/stat.h>
-#include <fcntl.h>
-
-int main()
-{
-	int	i;
-	char* fileName = "text.txt";
-	int fd = open(fileName, O_RDWR);
-	char *buff;
-
-	i = 0;
-	while (i < 5)
-	{
-		buff = buffer_until_line(fd);
-		printf("*************RUN %d of function*************\n TEXT: %s********************************************\n\n", i, buff);
-		free(buff);
-		i++;
-	}
-	return (0);
 }
