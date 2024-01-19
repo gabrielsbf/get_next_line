@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   get_next_line_utils.c                              :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: gabrfern <gabrfern@student.42.rio>         +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/01/18 09:39:25 by gabrfern          #+#    #+#             */
+/*   Updated: 2024/01/18 09:39:29 by gabrfern         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "get_next_line.h"
 
 char	*ft_gnl_strchr(char *s, int c)
@@ -28,23 +40,26 @@ int	ft_gnl_strlen(char *s)
 	return (i);
 }
 
-size_t ft_gnl_strcpy(char *src, char *dst)
+size_t	ft_gnl_strlcpy(char *dst, char *src, size_t size)
 {
-	int	i;
+	unsigned int	i;
 
 	i = 0;
-	if (src == NULL || dst == NULL)
-		return (0);
-	while (src[i] != '\0')
+	if (size != 0)
 	{
-		dst[i] = src[i];
-		i++;
+		while (src[i] != '\0' && size > i + 1)
+		{
+			dst[i] = src[i];
+			i++;
+		}
+		dst[i] = '\0';
 	}
-	dst[i] = '\0';
+	while (src[i] != '\0')
+		i++;
 	return (i);
 }
 
-size_t ft_gnl_strcat(char *src, char *dst)
+size_t	ft_gnl_strcat(char *src, char *dst)
 {
 	int	i_dst;
 	int	i_src;

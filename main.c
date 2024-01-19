@@ -5,15 +5,15 @@
 int main()
 {
 	int	i;
-	char* fileName = "text.txt";
+	char* fileName = "test2.txt";
 	int fd = open(fileName, O_RDWR);
 	char *buff;
 
 	i = 0;
 	while (i < 5)
 	{
-		buff = buffer_until_line(fd);
-		printf("*************RUN %d of function*************\n TEXT: %s********************************************\n\n", i, buff);
+		buff = line_process(fd);
+		// printf("*************RUN %d of function*************\n TEXT: %s********************************************\n\n", i, buff);
 		free(buff);
 		i++;
 	}
