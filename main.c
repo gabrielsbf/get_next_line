@@ -5,18 +5,23 @@
 int main()
 {
 	int	i;
-	char* fileName = "test2.txt";
+	char* fileName = "tests/41_no_nl";
 	int fd = open(fileName, O_RDWR);
 	char *buff;
 
 	i = 0;
-	while (i < 5)
+	while (i > -1)
 	{
-		buff = line_process(fd);
-		// printf("*************RUN %d of function*************\n TEXT: %s********************************************\n\n", i, buff);
+		buff = get_next_line(fd);
+		// printf("*************RUN %d of function*************\nTEXT: %s********************************************\n\n", i, buff);
+		if (!buff)
+			break;
+		printf("%s",buff);
 		free(buff);
+
 		i++;
 	}
+	free(buff);
+	close(fd);
 	return (0);
 }
-

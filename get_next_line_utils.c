@@ -17,6 +17,8 @@ char	*ft_gnl_strchr(char *s, int c)
 	char	*strc;
 	int		i;
 
+	if (!s)
+		return (0);
 	strc = (char *)s;
 	i = 0;
 	while (s[i] != '\0')
@@ -59,7 +61,7 @@ size_t	ft_gnl_strlcpy(char *dst, char *src, size_t size)
 	return (i);
 }
 
-size_t	ft_gnl_strcat(char *src, char *dst)
+size_t	ft_gnl_strcat(char *dst, char *src)
 {
 	int	i_dst;
 	int	i_src;
@@ -80,9 +82,10 @@ char	*ft_gnl_strdup(char *s, int size_buff)
 {
 	int		i;
 	char	*ptr;
-
+	if (size_buff <= 0)
+		return (NULL);
 	i = 0;
-	if (s == NULL)
+	if (!s)
 		return (NULL);
 	ptr = (char *)malloc((size_buff + 1) * sizeof(char));
 	while (i < size_buff)
